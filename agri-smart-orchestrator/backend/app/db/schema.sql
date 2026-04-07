@@ -48,7 +48,7 @@ CREATE TABLE tasks (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     assigned_to_agent TEXT,
     description TEXT,
-    status TEXT DEFAULT
+    status TEXT DEFAULT 'Pending',
     priority INTEGER DEFAULT 2,
     due_date TIMESTAMP
 );
